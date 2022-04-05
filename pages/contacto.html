@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar Marcelo - Contacto</title>
+    <link rel="shotcut icon" href="../images/logobazar.png">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans:wght@700&family=Oswald:wght@300&display=swap"
+        rel="stylesheet"> <!-- Fuente de la barra de navegacion -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:ital,wght@1,300&family=Noto+Sans:wght@700&family=Oswald:wght@300&display=swap"
+        rel="stylesheet"> <!-- fuente del footer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:ital,wght@1,300&family=Noto+Sans:wght@700&family=Oswald:wght@300&display=swap"
+        rel="stylesheet"> <!-- fuente parrafos -->
+</head>
+
+<body>
+    <div id="organizacion">
+        <header id="encabezado">
+            <img src="../images/logobazar.png" class="header_logo">
+            <nav id="header_barraNavegacion">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./vajilla.html">vajilla</a></li>
+                    <li><a href="./ollas.html">Ollas y Cacerolas</a></li>
+                    <li><a href="./vasos.html">Vasos y Copas</a></li>
+                    <li><a href="./general.html">General</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="organizacion_contacto">
+            <h1 class="titulo">Complete el formulario y dejenos sus consultas</h1>
+            <form action="" method="post" id="formulario">
+                <section id="nombre">
+                    <label for="">Nombre y Apellido</label>
+                    <p><input type="text" placeholder="Escriba su nombre"></p>
+                </section>
+                <section id="mail">
+                    <label for="">E-mail</label>
+                    <p><input type="email"
+                            placeholder="Coloque su direccion de mail para que podamos responder su consulta"></p>
+                </section>
+                <section id="tipo_consulta">
+                    <label for="">Tipo de consulta</label>
+                    <input type="radio" name="tipoconsulta">Por compra
+                    <input type="radio" name="tipoconsulta">Por producto
+                    <input type="radio" name="tipoconsulta">Otra
+                </section>
+                <section id="consulta">
+                    <label for="">Consulta</label>
+                    <p><input type="text" placeholder="Háganos su consulta, de máximo 400 caracteres" maxlength="400"></p>
+                </section>             
+            </form>
+        </main>
+
+        <footer class="pie">
+            <h3 id="direccion">Gelly y Obes 4602, J.C.Paz</h3>
+            <h3 id="titulo_pie">Seguinos en nuestras redes sociales</h3>
+            <ul>
+                <a href="https://instagram.com/bazar.y.regaleria?utm_medium=copy_link" target="_blank"> <img
+                        src="../images/logoinstagram.png" height="40px" width="40px"></a>
+                <li><a href="https://instagram.com/bazar.y.regaleria?utm_medium=copy_link" id="instagram"
+                        target="_blank">Instagram</a></li>
+            </ul>
+            <ul>
+                <a href="https://www.youtube.com/" target="_blank"> <img src="../images/logoyoutube.jpg" height="40px"
+                        width="60px"></a>
+                <li><a href="https://www.youtube.com/" id="youtube" target="_blank">Youtube</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
