@@ -25,6 +25,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:ital,wght@1,300&family=Noto+Sans:wght@700&family=Oswald:wght@300&display=swap"
         rel="stylesheet"> <!-- fuente parrafos -->
+
+    <!-- animacion titulos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />    
 </head>
 
 <body>
@@ -44,26 +47,28 @@
         </header>
 
         <main id="organizacion_contacto">
-            <h1 class="titulo">Complete el formulario y dejenos sus consultas</h1>
+            <h1 class="titulo animate__wobble">Complete el formulario y dejenos sus consultas</h1>
             <form action="" method="post" id="formulario">
                 <section id="nombre">
-                    <label for="">Nombre y Apellido</label>
-                    <p><input type="text" placeholder="Escriba su nombre"></p>
+                    <h3 id="titulo_contacto">Nombre y Apellido</h3>
+                    <p><input type="text" placeholder="Escriba su nombre" id="texto_nombre"></p>
                 </section>
                 <section id="mail">
-                    <label for="">E-mail</label>
+                    <h3 id="titulo_contacto">E-mail</h3>
                     <p><input type="email"
-                            placeholder="Coloque su direccion de mail para que podamos responder su consulta"></p>
+                            placeholder="Coloque su direccion de mail" id="texto_mail"></p>
                 </section>
                 <section id="tipo_consulta">
-                    <label for="">Tipo de consulta</label>
-                    <input type="radio" name="tipoconsulta">Por compra
-                    <input type="radio" name="tipoconsulta">Por producto
-                    <input type="radio" name="tipoconsulta">Otra
+                    <h3 id="titulo_contacto">Tipo de consulta</h3>
+                    <section id="eleccion_consulta">
+                        <input type="radio" name="tipoconsulta">Por compra
+                        <input type="radio" name="tipoconsulta">Por producto
+                        <input type="radio" name="tipoconsulta">Otra
+                    </section>
                 </section>
                 <section id="consulta">
-                    <label for="">Consulta</label>
-                    <p><input type="text" placeholder="Háganos su consulta, de máximo 400 caracteres" maxlength="400"></p>
+                    <h3 id="titulo_contacto">Consulta</h3>
+                    <p><input type="text" placeholder="Háganos su consulta, de máximo 400 caracteres" maxlength="400" id="texto_consulta"></p>
                 </section>             
             </form>
         </main>

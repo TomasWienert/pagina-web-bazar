@@ -7,7 +7,8 @@
 /* general para todas las paginas, organizacion, header y footer */
 
 body {
-    background-color: #f2d9f3;
+    background: rgb(242, 217, 243);
+    background: linear-gradient(90deg, rgba(242, 217, 243, 1) 0%, rgba(175, 150, 176, 1) 50%, rgba(132, 82, 136, 1) 100%);
 }
 
 * {
@@ -59,6 +60,7 @@ footer {
     border-radius: 15px;
     width: 50%;
     padding: 0.2%;
+    font-size: 16px;
     text-transform: uppercase;
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Noto Sans', sans-serif;
@@ -327,22 +329,98 @@ p {
 
 /* pagina contacto */
 
-#organizacion_contacto{
+#organizacion_contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#formulario{
+#formulario {
     display: flex;
     flex-direction: column;
-    border: 2px solid grey;
+    border: 3px solid #721278;
     align-items: center;
-    width: 50%;
-    min-width: 700px;
+    width: 40%;
+    min-width: 340px;
     margin-top: 50px;
+    background: rgb(242, 217, 243);
+    background: radial-gradient(circle, rgba(242, 217, 243, 1) 0%, rgba(175, 150, 176, 1) 50%, rgba(168, 117, 172, 1) 100%);
 }
 
+#titulo_contacto {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #721278;
+}
+
+#nombre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#texto_nombre {
+    width: 300px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+#mail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#texto_mail {
+    width: 300px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+#tipo_consulta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#eleccion_consulta {
+    height: 25px;
+    margin-top: 15px;
+    width: 300px;
+    /* background-color: #721278; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-around;
+    /* No puedo correr las opciones en el eje horizontal */
+}
+
+#consulta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#texto_consulta {
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+}
 
 
 @media only screen and (max-width:850px) {
@@ -356,8 +434,11 @@ p {
     }
 
     .header_logo {
-        height: 50%;
-        padding: 60px 0 0 40px;
+        height: 40%;
+        min-width: 100px;
+        max-width: 200px;
+        width: 40%;
+        padding: 60px 0 0 10px;
     }
 
     #header_barraNavegacion {
@@ -365,6 +446,7 @@ p {
         margin-top: 20px;
         border-radius: 10px;
         width: auto;
+        font-size: 13px;
 
     }
 
@@ -389,6 +471,15 @@ p {
 
     main {
         margin-top: 50px;
+    }
+
+    #titulo_pie {
+        font-size: 15px;
+    }
+
+    .pie h3 {
+        position: absolute;
+        left: 20px;
     }
 
     /* pagina inicio */
@@ -436,7 +527,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: -50px 25px 0px 25px;
+        margin: -90px 25px 0px 25px;
     }
 
     #imagenes_ceramica {
@@ -463,17 +554,20 @@ p {
     /* pagina vasos y copas */
 
     #titulo_vasos {
-        margin-top: 0;
+        margin-top: -45px;
     }
 
     #imagenes_vasos {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0;
+
     }
 
     #imagenes_vasos img {
-        width: 100%;
-        height: 300px;
+        width: 90%;
+        height: 90%;
     }
 
 }
